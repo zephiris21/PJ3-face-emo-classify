@@ -1,0 +1,19 @@
+{
+  "input": {
+    "directory": "./crawling/파묘",
+    "file_extensions": ["jpg", "jpeg", "png"]
+  },
+  "output": {
+    "base_directory": "./outputs",
+    "use_timestamp_folder": true
+  },
+  "processing": {
+    "min_face_size": 50,
+    "confidence_threshold": 0.3,
+    "batch_size": 1
+  },
+  "emotion_labels": [
+    "Anger", "Contempt", "Disgust", "Fear", 
+    "Happiness", "Neutral", "Sadness", "Surprise"
+  ]
+} 

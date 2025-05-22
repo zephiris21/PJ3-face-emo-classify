@@ -1,0 +1,31 @@
+name: conda-env
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  conda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create condarc file
+        run: |
+          echo "solver: classic" > condarc
+
+      - name: Set up Miniconda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          python-version: 3.9
+          environment-file: environment.yml
+          channels: conda-forge, defaults
+          auto-activate-base: true
+          activate-environment: base
+          condarc-file: condarc
+
+      - name: Install facetorch from conda-forge
+        run: |
+          conda install -c conda-forge facetorch

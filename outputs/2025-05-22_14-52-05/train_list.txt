@@ -1,0 +1,10 @@
+./outputs\2025-05-22_14-52-05\processed_images\000002_face2.jpg Fear
+./outputs\2025-05-22_14-52-05\processed_images\000002_face4.jpg Neutral
+./outputs\2025-05-22_14-52-05\processed_images\000005_face1.jpg Sadness
+./outputs\2025-05-22_14-52-05\processed_images\000005_face2.jpg Neutral
+./outputs\2025-05-22_14-52-05\processed_images\000010_face1.jpg Sadness
+./outputs\2025-05-22_14-52-05\processed_images\000002_face2.jpg Fear
+./outputs\2025-05-22_14-52-05\processed_images\000002_face4.jpg Neutral
+./outputs\2025-05-22_14-52-05\processed_images\000005_face1.jpg Sadness
+./outputs\2025-05-22_14-52-05\processed_images\000005_face2.jpg Neutral
+./outputs\2025-05-22_14-52-05\processed_images\000010_face1.jpg Sadness

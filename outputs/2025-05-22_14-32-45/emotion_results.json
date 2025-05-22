@@ -1,0 +1,1103 @@
+{
+  "timestamp": "2025-05-22_14-32-45",
+  "total_images": 100,
+  "total_faces": 26,
+  "results": [
+    {
+      "image_name": "000001",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000002",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000002.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            568,
+            255,
+            740,
+            428
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.38902178406715393,
+          "scores": {
+            "Anger": 0.030017642304301262,
+            "Contempt": 0.1713126003742218,
+            "Disgust": 0.18794071674346924,
+            "Fear": 0.11377616226673126,
+            "Happiness": 0.38902178406715393,
+            "Neutral": 0.01038872916251421,
+            "Sadness": 0.049973148852586746,
+            "Surprise": 0.04756913706660271
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000002_face1.jpg"
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            779,
+            157,
+            1043,
+            421
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.31741049885749817,
+          "scores": {
+            "Anger": 0.03183915466070175,
+            "Contempt": 0.1635393351316452,
+            "Disgust": 0.1745610535144806,
+            "Fear": 0.11082053929567337,
+            "Happiness": 0.31741049885749817,
+            "Neutral": 0.035756006836891174,
+            "Sadness": 0.051795728504657745,
+            "Surprise": 0.11427755653858185
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000002_face2.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000003",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000004",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000005",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000006",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000007",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000008",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000009",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000010",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000011",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000012",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000013",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000014",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000015",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000015.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            71,
+            79,
+            268,
+            277
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.5037754774093628,
+          "scores": {
+            "Anger": 0.02230040542781353,
+            "Contempt": 0.5037754774093628,
+            "Disgust": 0.10814351588487625,
+            "Fear": 0.06884730607271194,
+            "Happiness": 0.2096235603094101,
+            "Neutral": 0.042158566415309906,
+            "Sadness": 0.01869776099920273,
+            "Surprise": 0.02645339071750641
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000015_face1.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000016",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000017",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000017.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            344,
+            45,
+            474,
+            175
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.29015931487083435,
+          "scores": {
+            "Anger": 0.19802825152873993,
+            "Contempt": 0.16150915622711182,
+            "Disgust": 0.1322830319404602,
+            "Fear": 0.08282092958688736,
+            "Happiness": 0.009116739965975285,
+            "Neutral": 0.29015931487083435,
+            "Sadness": 0.06867658346891403,
+            "Surprise": 0.05740603432059288
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000017_face1.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000018",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000019",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000021",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000022",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000023",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000024",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000025",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000026",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000027",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000028",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000028.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            260,
+            332,
+            473,
+            545
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.3050861656665802,
+          "scores": {
+            "Anger": 0.01701470836997032,
+            "Contempt": 0.21080279350280762,
+            "Disgust": 0.11451828479766846,
+            "Fear": 0.08975662291049957,
+            "Happiness": 0.07921689003705978,
+            "Neutral": 0.3050861656665802,
+            "Sadness": 0.12035458534955978,
+            "Surprise": 0.06324988603591919
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000028_face1.jpg"
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            490,
+            158,
+            636,
+            305
+          ],
+          "emotion": "Fear",
+          "confidence": 0.32640084624290466,
+          "scores": {
+            "Anger": 0.026911266148090363,
+            "Contempt": 0.0948559120297432,
+            "Disgust": 0.13126510381698608,
+            "Fear": 0.32640084624290466,
+            "Happiness": 0.0321369506418705,
+            "Neutral": 0.1199544221162796,
+            "Sadness": 0.14224717020988464,
+            "Surprise": 0.12622837722301483
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000028_face2.jpg"
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            13,
+            277,
+            151,
+            415
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.3122791349887848,
+          "scores": {
+            "Anger": 0.01732579991221428,
+            "Contempt": 0.22041870653629303,
+            "Disgust": 0.13163581490516663,
+            "Fear": 0.07882700860500336,
+            "Happiness": 0.09651464223861694,
+            "Neutral": 0.3122791349887848,
+            "Sadness": 0.056578658521175385,
+            "Surprise": 0.08642023801803589
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000028_face3.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000030",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000030.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            633,
+            142,
+            808,
+            317
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.3536737859249115,
+          "scores": {
+            "Anger": 0.056615788489580154,
+            "Contempt": 0.14401490986347198,
+            "Disgust": 0.12340528517961502,
+            "Fear": 0.07732328027486801,
+            "Happiness": 0.026731498539447784,
+            "Neutral": 0.3536737859249115,
+            "Sadness": 0.16572371125221252,
+            "Surprise": 0.052511781454086304
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000030_face1.jpg"
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            278,
+            50,
+            474,
+            246
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.26203688979148865,
+          "scores": {
+            "Anger": 0.12833209335803986,
+            "Contempt": 0.1236773133277893,
+            "Disgust": 0.13474375009536743,
+            "Fear": 0.08991501480340958,
+            "Happiness": 0.007023001555353403,
+            "Neutral": 0.26203688979148865,
+            "Sadness": 0.2195083647966385,
+            "Surprise": 0.034763507544994354
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000030_face2.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000031",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000032",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000033",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000034",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000035",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000036",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000037",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000037.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            301,
+            190,
+            526,
+            416
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.2522870898246765,
+          "scores": {
+            "Anger": 0.12516306340694427,
+            "Contempt": 0.22940398752689362,
+            "Disgust": 0.13817869126796722,
+            "Fear": 0.11226294189691544,
+            "Happiness": 0.011937214061617851,
+            "Neutral": 0.08590847253799438,
+            "Sadness": 0.2522870898246765,
+            "Surprise": 0.04485850781202316
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000037_face1.jpg"
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            178,
+            407,
+            385,
+            615
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.27565181255340576,
+          "scores": {
+            "Anger": 0.044703349471092224,
+            "Contempt": 0.11000657081604004,
+            "Disgust": 0.27565181255340576,
+            "Fear": 0.0708845779299736,
+            "Happiness": 0.021205151453614235,
+            "Neutral": 0.2736265957355499,
+            "Sadness": 0.12425310909748077,
+            "Surprise": 0.07966891676187515
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000037_face2.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000038",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000039",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000040",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000041",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000042",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000043",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000044",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000047",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000048",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000049",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000050",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000050.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            42,
+            216,
+            156,
+            330
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.18805065751075745,
+          "scores": {
+            "Anger": 0.031173862516880035,
+            "Contempt": 0.12931935489177704,
+            "Disgust": 0.18805065751075745,
+            "Fear": 0.13862548768520355,
+            "Happiness": 0.11482832580804825,
+            "Neutral": 0.13933373987674713,
+            "Sadness": 0.15364225208759308,
+            "Surprise": 0.1050262376666069
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000050_face1.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000001",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000002",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000002.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            568,
+            255,
+            740,
+            428
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.38902178406715393,
+          "scores": {
+            "Anger": 0.030017642304301262,
+            "Contempt": 0.1713126003742218,
+            "Disgust": 0.18794071674346924,
+            "Fear": 0.11377616226673126,
+            "Happiness": 0.38902178406715393,
+            "Neutral": 0.01038872916251421,
+            "Sadness": 0.049973148852586746,
+            "Surprise": 0.04756913706660271
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000002_face1.jpg"
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            779,
+            157,
+            1043,
+            421
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.31741049885749817,
+          "scores": {
+            "Anger": 0.03183915466070175,
+            "Contempt": 0.1635393351316452,
+            "Disgust": 0.1745610535144806,
+            "Fear": 0.11082053929567337,
+            "Happiness": 0.31741049885749817,
+            "Neutral": 0.035756006836891174,
+            "Sadness": 0.051795728504657745,
+            "Surprise": 0.11427755653858185
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000002_face2.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000003",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000004",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000005",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000006",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000007",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000008",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000009",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000010",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000011",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000012",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000013",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000014",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000015",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000015.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            71,
+            79,
+            268,
+            277
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.5037754774093628,
+          "scores": {
+            "Anger": 0.02230040542781353,
+            "Contempt": 0.5037754774093628,
+            "Disgust": 0.10814351588487625,
+            "Fear": 0.06884730607271194,
+            "Happiness": 0.2096235603094101,
+            "Neutral": 0.042158566415309906,
+            "Sadness": 0.01869776099920273,
+            "Surprise": 0.02645339071750641
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000015_face1.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000016",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000017",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000017.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            344,
+            45,
+            474,
+            175
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.29015931487083435,
+          "scores": {
+            "Anger": 0.19802825152873993,
+            "Contempt": 0.16150915622711182,
+            "Disgust": 0.1322830319404602,
+            "Fear": 0.08282092958688736,
+            "Happiness": 0.009116739965975285,
+            "Neutral": 0.29015931487083435,
+            "Sadness": 0.06867658346891403,
+            "Surprise": 0.05740603432059288
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000017_face1.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000018",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000019",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000021",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000022",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000023",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000024",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000025",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000026",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000027",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000028",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000028.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            260,
+            332,
+            473,
+            545
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.3050861656665802,
+          "scores": {
+            "Anger": 0.01701470836997032,
+            "Contempt": 0.21080279350280762,
+            "Disgust": 0.11451828479766846,
+            "Fear": 0.08975662291049957,
+            "Happiness": 0.07921689003705978,
+            "Neutral": 0.3050861656665802,
+            "Sadness": 0.12035458534955978,
+            "Surprise": 0.06324988603591919
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000028_face1.jpg"
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            490,
+            158,
+            636,
+            305
+          ],
+          "emotion": "Fear",
+          "confidence": 0.32640084624290466,
+          "scores": {
+            "Anger": 0.026911266148090363,
+            "Contempt": 0.0948559120297432,
+            "Disgust": 0.13126510381698608,
+            "Fear": 0.32640084624290466,
+            "Happiness": 0.0321369506418705,
+            "Neutral": 0.1199544221162796,
+            "Sadness": 0.14224717020988464,
+            "Surprise": 0.12622837722301483
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000028_face2.jpg"
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            13,
+            277,
+            151,
+            415
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.3122791349887848,
+          "scores": {
+            "Anger": 0.01732579991221428,
+            "Contempt": 0.22041870653629303,
+            "Disgust": 0.13163581490516663,
+            "Fear": 0.07882700860500336,
+            "Happiness": 0.09651464223861694,
+            "Neutral": 0.3122791349887848,
+            "Sadness": 0.056578658521175385,
+            "Surprise": 0.08642023801803589
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000028_face3.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000030",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000030.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            633,
+            142,
+            808,
+            317
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.3536737859249115,
+          "scores": {
+            "Anger": 0.056615788489580154,
+            "Contempt": 0.14401490986347198,
+            "Disgust": 0.12340528517961502,
+            "Fear": 0.07732328027486801,
+            "Happiness": 0.026731498539447784,
+            "Neutral": 0.3536737859249115,
+            "Sadness": 0.16572371125221252,
+            "Surprise": 0.052511781454086304
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000030_face1.jpg"
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            278,
+            50,
+            474,
+            246
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.26203688979148865,
+          "scores": {
+            "Anger": 0.12833209335803986,
+            "Contempt": 0.1236773133277893,
+            "Disgust": 0.13474375009536743,
+            "Fear": 0.08991501480340958,
+            "Happiness": 0.007023001555353403,
+            "Neutral": 0.26203688979148865,
+            "Sadness": 0.2195083647966385,
+            "Surprise": 0.034763507544994354
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000030_face2.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000031",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000032",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000033",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000034",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000035",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000036",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000037",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000037.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            301,
+            190,
+            526,
+            416
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.2522870898246765,
+          "scores": {
+            "Anger": 0.12516306340694427,
+            "Contempt": 0.22940398752689362,
+            "Disgust": 0.13817869126796722,
+            "Fear": 0.11226294189691544,
+            "Happiness": 0.011937214061617851,
+            "Neutral": 0.08590847253799438,
+            "Sadness": 0.2522870898246765,
+            "Surprise": 0.04485850781202316
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000037_face1.jpg"
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            178,
+            407,
+            385,
+            615
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.27565181255340576,
+          "scores": {
+            "Anger": 0.044703349471092224,
+            "Contempt": 0.11000657081604004,
+            "Disgust": 0.27565181255340576,
+            "Fear": 0.0708845779299736,
+            "Happiness": 0.021205151453614235,
+            "Neutral": 0.2736265957355499,
+            "Sadness": 0.12425310909748077,
+            "Surprise": 0.07966891676187515
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000037_face2.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000038",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000039",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000040",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000041",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000042",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000043",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000044",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000047",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000048",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000049",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000050",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000050.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            42,
+            216,
+            156,
+            330
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.18805065751075745,
+          "scores": {
+            "Anger": 0.031173862516880035,
+            "Contempt": 0.12931935489177704,
+            "Disgust": 0.18805065751075745,
+            "Fear": 0.13862548768520355,
+            "Happiness": 0.11482832580804825,
+            "Neutral": 0.13933373987674713,
+            "Sadness": 0.15364225208759308,
+            "Surprise": 0.1050262376666069
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000050_face1.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000020",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000029",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000045",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000046",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000046.jpg",
+      "faces": [
+        {
+          "face_id": 2,
+          "bbox": [
+            366,
+            460,
+            475,
+            570
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.29251012206077576,
+          "scores": {
+            "Anger": 0.05928311496973038,
+            "Contempt": 0.10034332424402237,
+            "Disgust": 0.1392255425453186,
+            "Fear": 0.08999260514974594,
+            "Happiness": 0.010692371055483818,
+            "Neutral": 0.2316189557313919,
+            "Sadness": 0.29251012206077576,
+            "Surprise": 0.0763338953256607
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000046_face2.jpg"
+        }
+      ]
+    },
+    {
+      "image_name": "000020",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000029",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000045",
+      "image_path": null,
+      "faces": []
+    },
+    {
+      "image_name": "000046",
+      "image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000046.jpg",
+      "faces": [
+        {
+          "face_id": 2,
+          "bbox": [
+            366,
+            460,
+            475,
+            570
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.29251012206077576,
+          "scores": {
+            "Anger": 0.05928311496973038,
+            "Contempt": 0.10034332424402237,
+            "Disgust": 0.1392255425453186,
+            "Fear": 0.08999260514974594,
+            "Happiness": 0.010692371055483818,
+            "Neutral": 0.2316189557313919,
+            "Sadness": 0.29251012206077576,
+            "Surprise": 0.0763338953256607
+          },
+          "face_image_path": "./outputs\\2025-05-22_14-32-45\\processed_images\\000046_face2.jpg"
+        }
+      ]
+    }
+  ],
+  "emotions_summary": {
+    "Happiness": 4,
+    "Contempt": 2,
+    "Neutral": 10,
+    "Fear": 2,
+    "Sadness": 4,
+    "Disgust": 4
+  }
+}

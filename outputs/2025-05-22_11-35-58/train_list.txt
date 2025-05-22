@@ -1,0 +1,14 @@
+./outputs\2025-05-22_11-35-58\processed_images\000002_face1.jpg Happiness
+./outputs\2025-05-22_11-35-58\processed_images\000002_face2.jpg Happiness
+./outputs\2025-05-22_11-35-58\processed_images\000015_face1.jpg Contempt
+./outputs\2025-05-22_11-35-58\processed_images\000028_face1.jpg Neutral
+./outputs\2025-05-22_11-35-58\processed_images\000028_face2.jpg Fear
+./outputs\2025-05-22_11-35-58\processed_images\000028_face3.jpg Neutral
+./outputs\2025-05-22_11-35-58\processed_images\000030_face1.jpg Neutral
+./outputs\2025-05-22_11-35-58\processed_images\000002_face1.jpg Happiness
+./outputs\2025-05-22_11-35-58\processed_images\000002_face2.jpg Happiness
+./outputs\2025-05-22_11-35-58\processed_images\000015_face1.jpg Contempt
+./outputs\2025-05-22_11-35-58\processed_images\000028_face1.jpg Neutral
+./outputs\2025-05-22_11-35-58\processed_images\000028_face2.jpg Fear
+./outputs\2025-05-22_11-35-58\processed_images\000028_face3.jpg Neutral
+./outputs\2025-05-22_11-35-58\processed_images\000030_face1.jpg Neutral

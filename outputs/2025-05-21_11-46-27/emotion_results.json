@@ -1,0 +1,4709 @@
+{
+  "timestamp": "2025-05-21_11-46-27",
+  "total_images": 126,
+  "total_faces": 328,
+  "results": [
+    {
+      "image_name": "000001",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000001.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000002",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000002.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000003",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000003.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Fear",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000004",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000004.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000005",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000005.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000006",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000006.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000007",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000007.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000008",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000008.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Fear",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000009",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000009.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000010",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000010.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000011",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000011.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000012",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000012.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000013",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000013.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000014",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000014.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000015",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000015.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000016",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000016.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Fear",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000017",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000017.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000018",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000018.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000019",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000019.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Fear",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000020",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000020.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000021",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000021.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000022",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000022.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000023",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000023.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000024",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000024.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000025",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000025.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000026",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000026.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000027",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000027.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000028",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000028.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000029",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000029.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000030",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000030.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000031",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000031.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000032",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000032.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000033",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000033.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000034",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000034.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000035",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000035.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000036",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000036.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000037",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000037.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000038",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000038.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000039",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000039.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000040",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000040.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000041",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000041.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000042",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000042.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 6,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 7,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000043",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000043.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000044",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000044.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000046",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000046.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 6,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 7,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000047",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000047.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000048",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000048.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000049",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000049.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000050",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000050.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000051",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000051.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000052",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000052.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000053",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000053.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000054",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000054.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000055",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000055.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000056",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000056.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000057",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000057.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000058",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000058.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000059",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000059.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000060",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000060.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000061",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000061.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000062",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000062.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 6,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000063",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000063.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000001",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000001.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000002",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000002.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000003",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000003.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Fear",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000004",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000004.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000005",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000005.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000006",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000006.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000007",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000007.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000008",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000008.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Fear",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000009",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000009.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000010",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000010.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000011",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000011.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000012",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000012.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000013",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000013.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000014",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000014.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000015",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000015.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000016",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000016.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Fear",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000017",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000017.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000018",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000018.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000019",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000019.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Fear",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000020",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000020.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000021",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000021.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000022",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000022.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000023",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000023.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000024",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000024.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000025",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000025.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000026",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000026.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000027",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000027.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000028",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000028.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000029",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000029.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000030",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000030.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000031",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000031.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000032",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000032.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000033",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000033.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000034",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000034.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000035",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000035.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000036",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000036.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000037",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000037.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000038",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000038.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000039",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000039.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000040",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000040.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000041",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000041.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000042",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000042.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 6,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 7,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000043",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000043.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000044",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000044.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000046",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000046.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Anger",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 6,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 7,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000047",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000047.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000048",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000048.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000049",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000049.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000050",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000050.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000051",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000051.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000052",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000052.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000053",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000053.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000054",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000054.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000055",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000055.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000056",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000056.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000057",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000057.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000058",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000058.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000059",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000059.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000060",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000060.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000061",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000061.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000062",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000062.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 3,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Disgust",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 4,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Sadness",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 5,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Surprise",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 6,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Contempt",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000063",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000063.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Happiness",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000045",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000045.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    },
+    {
+      "image_name": "000045",
+      "image_path": "./outputs\\2025-05-21_11-46-27\\processed_images\\000045.jpg",
+      "faces": [
+        {
+          "face_id": 1,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        },
+        {
+          "face_id": 2,
+          "bbox": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "emotion": "Neutral",
+          "confidence": 0.0,
+          "face_image_path": null
+        }
+      ]
+    }
+  ],
+  "emotions_summary": {
+    "Sadness": 62,
+    "Neutral": 102,
+    "Disgust": 22,
+    "Fear": 8,
+    "Happiness": 58,
+    "Surprise": 12,
+    "Anger": 20,
+    "Contempt": 44
+  }
+}

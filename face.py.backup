@@ -1,0 +1,648 @@
+import os
+import glob
+import csv
+import json
+from pathlib import Path
+import hydra
+from omegaconf import DictConfig
+from facetorch import FaceAnalyzer
+from PIL import Image, ImageDraw, ImageFont
+import numpy as np
+import torch
+import torch.nn.functional as F
+from datetime import datetime
+import shutil
+from torchvision import transforms
+
+def softmax(logits):
+    """
+    로짓에 softmax를 적용하여 확률 값으로 변환
+    """
+    if isinstance(logits, torch.Tensor):
+        return F.softmax(logits, dim=0)
+    else:
+        # 로짓이 numpy 배열이나 리스트인 경우
+        logits_tensor = torch.tensor(logits)
+        return F.softmax(logits_tensor, dim=0).numpy()
+
+@hydra.main(version_base=None, config_path="./facetorch/conf", config_name="config")
+def main(cfg: DictConfig) -> None:
+    # 현재 시간을 기준으로 출력 디렉토리 생성
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    
+    print("\n===== 설정 경로 및 구조 확인 =====")
+    print(f"현재 작업 디렉토리: {os.getcwd()}")
+    print(f"설정 파일 경로: ./facetorch/conf/config.yaml")
+    if os.path.exists("./facetorch/conf/config.yaml"):
+        print("✅ 설정 파일 존재 확인")
+    else:
+        print("❌ 설정 파일을 찾을 수 없습니다")
+        
+    print(f"설정 파일 내용: {os.path.exists('./facetorch/conf/analyzer/unifier/img_380.yaml')}")
+    
+    print("\n===== 설정 내용 상세 확인 =====")
+    print("전체 설정 구조 (요약):")
+    from omegaconf import OmegaConf
+    cfg_str = OmegaConf.to_yaml(cfg)
+    print(cfg_str[:500] + "..." if len(cfg_str) > 500 else cfg_str)
+    
+    print("\n----- unifier 설정 확인 -----")
+    if "analyzer" in cfg and "unifier" in cfg.analyzer:
+        print("✅ unifier 설정 존재")
+        print(f"unifier 설정 상세:\n{OmegaConf.to_yaml(cfg.analyzer.unifier)}")
+    else:
+        print("❌ unifier 설정이 없습니다")
+    
+    # FaceAnalyzer 초기화 (설정 변경은 analyzer.run에서 직접 전달)
+    analyzer = FaceAnalyzer(cfg.analyzer)
+    print("FaceAnalyzer 초기화 완료")
+    
+    # FaceAnalyzer 객체 상세 조사
+    print("\n===== FaceAnalyzer 객체 상세 확인 =====")
+    print(f"FaceAnalyzer 속성 목록: {[attr for attr in dir(analyzer) if not attr.startswith('_')]}")
+    print(f"unifier 객체 존재 여부: {'unifier' in analyzer.__dict__}")
+    if "unifier" in analyzer.__dict__ and analyzer.unifier is not None:
+        print(f"unifier 객체 타입: {type(analyzer.unifier)}")
+        print(f"unifier 객체 속성: {[attr for attr in dir(analyzer.unifier) if not attr.startswith('_')]}")
+    
+    # Monkey patching으로 unifier.run 함수 후킹
+    if "unifier" in analyzer.__dict__ and analyzer.unifier is not None:
+        original_unifier_run = analyzer.unifier.run
+        
+        def unifier_run_hook(data):
+            print("\n===== unifier.run 호출 감지 =====")
+            print(f"입력 데이터 타입: {type(data)}")
+            print(f"입력 데이터 얼굴 수: {len(data.faces) if hasattr(data, 'faces') else 'faces 속성 없음'}")
+            
+            # 원본 함수 호출
+            result = original_unifier_run(data)
+            
+            print(f"처리 후 데이터 얼굴 수: {len(result.faces) if hasattr(result, 'faces') else 'faces 속성 없음'}")
+            if hasattr(result, 'faces') and len(result.faces) > 0:
+                print(f"첫 번째 얼굴 속성: {[attr for attr in dir(result.faces[0]) if not attr.startswith('_')]}")
+                print(f"img 속성 존재 여부: {'img' in dir(result.faces[0])}")
+            
+            return result
+            
+        analyzer.unifier.run = unifier_run_hook
+        print("unifier.run 함수 후킹 완료")
+    
+    # analyzer.run 메서드도 후킹
+    original_analyzer_run = analyzer.run
+    
+    def analyzer_run_hook(image_source=None, path_image=None, batch_size=8, fix_img_size=False, 
+                          return_img_data=False, include_tensors=False, path_output=None, tensor=None):
+        print("\n===== analyzer.run 호출 감지 =====")
+        print(f"매개변수: image_source={type(image_source)}, include_tensors={include_tensors}")
+        
+        # 원본 함수 호출
+        result = original_analyzer_run(image_source, path_image, batch_size, fix_img_size, 
+                                      return_img_data, include_tensors, path_output, tensor)
+        
+        print(f"반환 데이터 타입: {type(result)}")
+        print(f"반환 데이터 faces 속성 존재 여부: {hasattr(result, 'faces')}")
+        if hasattr(result, 'faces'):
+            print(f"faces 수: {len(result.faces)}")
+            if len(result.faces) > 0:
+                face_attrs = [attr for attr in dir(result.faces[0]) if not attr.startswith('_')]
+                print(f"첫 번째 face 속성 목록: {face_attrs}")
+                print(f"img 속성 존재 여부: {'img' in face_attrs}")
+                if 'tensor' in face_attrs:
+                    print(f"tensor 속성 정보: 타입={type(result.faces[0].tensor)}, 형태={result.faces[0].tensor.shape if hasattr(result.faces[0].tensor, 'shape') else '알 수 없음'}")
+        
+        return result
+    
+    analyzer.run = analyzer_run_hook
+    print("analyzer.run 함수 후킹 완료")
+    
+    # 설정 확인 (디버그용)
+    has_align_predictor = "align" in cfg.analyzer.predictor
+    has_align_utilizer = "align" in cfg.analyzer.utilizer
+    has_landmarks_utilizer = "draw_landmarks" in cfg.analyzer.utilizer
+    has_unifier = "unifier" in cfg.analyzer  # unifier 설정 확인 추가
+    
+    print(f"설정 확인: align predictor={has_align_predictor}, align utilizer={has_align_utilizer}, draw_landmarks={has_landmarks_utilizer}, unifier={has_unifier}")
+    
+    # unifier 설정 상세 확인
+    try:
+        print(f"unifier 상세 설정: {cfg.analyzer.get('unifier', None)}")
+    except Exception as e:
+        print(f"unifier 설정 확인 오류: {str(e)}")
+    
+    # unifier 설정이 없는 경우 안내 메시지 출력
+    if not has_unifier:
+        print("\n경고: unifier 설정이 없습니다. face.tensor가 제대로 변환되지 않아 aligned_faces 폴더에 이미지가 저장되지 않을 수 있습니다.")
+        print("\nunifier 설정 추가 가이드:")
+        print("1. ./facetorch/conf/config.yaml 파일에 다음 내용 추가:")
+        print("defaults:\n  - analyzer/unifier: img_380.yaml")
+        print("\n2. ./facetorch/conf/analyzer/unifier/img_380.yaml 파일 생성 및 다음 내용 추가:")
+        print("_target_: facetorch.analyzer.unifier.FaceUnifier\ntransform:\n  _target_: torchvision.transforms.Resize\n  size: [380, 380]")
+        
+        # unifier 설정 직접 추가 (선택적)
+        print("\n설정 직접 추가 시도...")
+        try:
+            from omegaconf import OmegaConf
+            # unifier 설정 기본값 생성
+            unifier_conf = {
+                "_target_": "facetorch.analyzer.unifier.FaceUnifier",
+                "transform": {
+                    "_target_": "torchvision.transforms.Resize",
+                    "size": [380, 380]
+                }
+            }
+            # 설정에 unifier 추가
+            cfg.analyzer.unifier = OmegaConf.create(unifier_conf)
+            print("unifier 설정이 임시로 추가되었습니다.")
+            has_unifier = True
+        except Exception as e:
+            print(f"unifier 설정 추가 실패: {str(e)}")
+            print("config.yaml 파일을 직접 수정한 후 다시 실행해주세요.")
+    
+    # 최소 얼굴 크기 설정 (픽셀 단위)
+    min_face_size = 96  # 최소 얼굴 크기 (픽셀)
+    print(f"최소 얼굴 크기 필터 설정: {min_face_size}x{min_face_size} 픽셀")
+    
+    # 입력 및 출력 디렉토리 설정
+    input_dir = "./crawling/운명"
+    base_output_dir = "./outputs"
+    output_dir = os.path.join(base_output_dir, timestamp)
+    processed_images_dir = os.path.join(output_dir, "processed_images")
+    aligned_images_dir = os.path.join(output_dir, "aligned_faces")
+    
+    # 출력 디렉토리 생성
+    os.makedirs(base_output_dir, exist_ok=True)
+    os.makedirs(output_dir, exist_ok=True)
+    os.makedirs(processed_images_dir, exist_ok=True)
+    os.makedirs(aligned_images_dir, exist_ok=True)
+    
+    # 감정 분석 결과를 저장할 CSV 파일 및 JSON 파일 경로
+    csv_path = os.path.join(output_dir, "emotion_results.csv")
+    json_path = os.path.join(output_dir, "emotion_results.json")
+    
+    # CSV 파일 헤더 작성
+    with open(csv_path, 'w', newline='', encoding='utf-8') as csvfile:
+        csv_writer = csv.writer(csvfile)
+        csv_writer.writerow(['image_path', 'face_id', 'emotion', 'confidence', 'bbox_x1', 'bbox_y1', 'bbox_x2', 'bbox_y2'])
+    
+    # JSON 결과 초기화
+    json_results = {
+        "timestamp": timestamp,
+        "total_images": 0,
+        "total_faces": 0,
+        "results": []
+    }
+    
+    # 이미지 파일 목록 가져오기 (jpg, jpeg, png)
+    image_files = []
+    for ext in ['*.jpg', '*.jpeg', '*.png']:
+        image_files.extend(glob.glob(os.path.join(input_dir, ext)))
+        image_files.extend(glob.glob(os.path.join(input_dir, ext.upper())))
+    
+    print(f"총 {len(image_files)}개의 이미지 파일을 찾았습니다.")
+    json_results["total_images"] = len(image_files)
+    
+    # 각 이미지 처리
+    total_face_count = 0
+    filtered_face_count = 0  # 필터링된 얼굴 수 추적
+    
+    # 감정 레이블 매핑 (FER 모델의 인덱스 순서에 따라 조정 필요할 수 있음)
+    emotion_labels = [
+        "Anger", "Contempt", "Disgust", "Fear", 
+        "Happiness", "Neutral", "Sadness", "Surprise"
+    ]
+    
+    for idx, img_path in enumerate(image_files):
+        try:
+            print(f"처리 중 ({idx+1}/{len(image_files)}): {img_path}")
+            
+            # 전처리: 이미지를 RGB로 변환하여 채널 문제 해결
+            img = Image.open(img_path).convert('RGB')
+            
+            # PIL 이미지를 직접 전달하는 방식으로 변경 (numpy 배열 변환 문제 해결)
+            # img_np = np.array(img, dtype=np.uint8)  # uint8 타입 명시적 지정도 가능한 대안
+            
+            # 원본 파일명 가져오기
+            filename = Path(img_path).stem
+            
+            # 이미지 처리 결과 경로
+            image_output_path = os.path.join(processed_images_dir, f"{filename}.jpg")
+            
+            # 이미지 처리
+            result = analyzer.run(
+                image_source=img,  # PIL 이미지 직접 전달 (np.array 변환 문제 해결)
+                batch_size=1,      # 더 정확한 처리를 위해 배치 크기 축소
+                fix_img_size=False,   # 원본 비율 유지
+                return_img_data=True, # 이미지 데이터 반환
+                include_tensors=True, # 텐서 포함 (face.tensor 및 logits 가져오기 위함)
+                path_output=None      # 얼굴이 없는 이미지는 저장하지 않기 위해 None으로 설정
+            )
+            
+            # 텐서가 제대로 포함되었는지 확인
+            print(f"  include_tensors 상태: include_tensors=True, result 객체에 텐서 포함 여부: {hasattr(result, 'faces') and len(result.faces) > 0 and any(hasattr(f, 'tensor') for f in result.faces)}")
+            
+            # 첫 번째 얼굴에 대한 상세 정보 출력 (디버깅용)
+            if hasattr(result, 'faces') and len(result.faces) > 0:
+                first_face = result.faces[0]
+                print(f"  첫 번째 얼굴 객체 확인: {type(first_face)}")
+                print(f"  첫 번째 얼굴 속성 목록: {[attr for attr in dir(first_face) if not attr.startswith('_')]}")
+                
+                if hasattr(first_face, 'tensor'):
+                    print(f"  첫 번째 얼굴 tensor 속성 확인: 타입={type(first_face.tensor)}, 형태={first_face.tensor.shape if first_face.tensor is not None else 'None'}")
+                else:
+                    print("  첫 번째 얼굴에 tensor 속성이 없습니다. unifier 설정 확인이 필요합니다.")
+            
+            # 이미지 전처리에 대한 정보 출력
+            print(f"  이미지 크기: {img.size}, 처리 방식: fix_img_size={False}")
+            
+            # 이미지 결과 데이터 초기화
+            image_result = {
+                "image_name": filename,
+                "image_path": None,  # 기본값은 None으로 설정
+                "faces": []
+            }
+            
+            # 결과 출력 및 저장
+            if hasattr(result, 'faces') and result.faces:
+                face_count = len(result.faces)
+                print(f"  감지된 얼굴 수: {face_count}")
+                
+                # 유효한 얼굴 수 카운트
+                valid_face_count = 0
+                
+                # 얼굴별 결과를 CSV에 추가
+                with open(csv_path, 'a', newline='', encoding='utf-8') as csvfile:
+                    csv_writer = csv.writer(csvfile)
+                
+                    # 각 얼굴에 대한 감정 인식 결과
+                    for i, face in enumerate(result.faces):
+                        # 얼굴 위치 정보 가져오기
+                        if hasattr(face, 'loc'):
+                            bbox = [face.loc.x1, face.loc.y1, face.loc.x2, face.loc.y2]
+                            w, h = bbox[2] - bbox[0], bbox[3] - bbox[1]
+                            
+                            # 작은 얼굴 필터링
+                            if w < min_face_size or h < min_face_size:
+                                filtered_face_count += 1
+                                print(f"  얼굴 #{i+1} - 크기가 너무 작아 건너뜀: {w}x{h} < {min_face_size}")
+                                continue
+                        else:
+                            bbox = [0, 0, 0, 0]
+                            w, h = 0, 0
+                            print(f"  얼굴 #{i+1} - 위치 정보가 없어 건너뜀")
+                            continue
+                        
+                        # 여기서부터는 크기가 충분한 얼굴만 처리됨
+                        valid_face_count += 1
+                        total_face_count += 1  # 유효한 얼굴만 카운트
+                        
+                        # 감정 분석 결과
+                        emotion = "Unknown"
+                        confidence = 0.0
+                        all_scores = {}
+                        face_img_path = None
+                        
+                        # 감정 예측 결과 추출
+                        if "fer" in face.preds:
+                            fer_pred = face.preds["fer"]
+                            
+                            # 레이블 정보 확인
+                            if hasattr(fer_pred, "label") and fer_pred.label:
+                                emotion = fer_pred.label
+                            
+                            # 로짓에서 confidence 계산
+                            if hasattr(fer_pred, "logits") and fer_pred.logits.numel() > 0:
+                                # softmax 적용하여 확률 값으로 변환
+                                probs = softmax(fer_pred.logits)
+                                # 최대 확률 및 해당 인덱스 추출
+                                max_prob, max_idx = torch.max(probs, dim=0)
+                                confidence = float(max_prob.item())
+                                
+                                # 레이블이 없는 경우 인덱스로 감정 추출
+                                if emotion == "Unknown" and 0 <= max_idx < len(emotion_labels):
+                                    emotion = emotion_labels[max_idx]
+                                
+                                # 모든 감정 점수 저장
+                                for j, score in enumerate(probs):
+                                    if j < len(emotion_labels):
+                                        all_scores[emotion_labels[j]] = float(score.item())
+                            
+                            # scores에서 감정 확률 추출
+                            elif hasattr(fer_pred, "scores") and fer_pred.scores:
+                                # scores가 딕셔너리인 경우
+                                if isinstance(fer_pred.scores, dict):
+                                    # 가장 높은 점수의 감정 레이블 찾기
+                                    max_score_item = max(fer_pred.scores.items(), key=lambda x: x[1])
+                                    # emotion이 없는 경우 최고 점수의 레이블 사용
+                                    if emotion == "Unknown":
+                                        emotion = max_score_item[0]
+                                    confidence = float(max_score_item[1])
+                                    all_scores = {k: float(v) for k, v in fer_pred.scores.items()}
+                        
+                        # 얼굴 이미지 저장 (별도 이미지로)
+                        face_filename = f"{filename}_face{i+1}.jpg"
+                        face_img_path = os.path.join(processed_images_dir, face_filename)
+                        
+                        # face 텐서 상태 확인 로그 추가
+                        has_tensor = hasattr(face, 'tensor')
+                        tensor_not_none = face.tensor is not None if has_tensor else False
+                        has_numel = hasattr(face.tensor, 'numel') if tensor_not_none else False
+                        numel_value = face.tensor.numel() if has_numel else 0
+                        tensor_shape = face.tensor.shape if tensor_not_none else 'None'
+                        
+                        print(f"  얼굴 #{i+1} - face.tensor 상태: 존재={has_tensor}, None아님={tensor_not_none}, numel속성={has_numel}, numel값={numel_value}, 형태={tensor_shape}")
+                        
+                        # 얼굴 영역 처리 - face.tensor가 있는 경우와 없는 경우 분리
+                        if has_tensor and tensor_not_none and has_numel and numel_value > 0:
+                            try:
+                                # 1. 정렬된 원본 이미지 저장 (aligned_faces 폴더)
+                                aligned_pil = transforms.ToPILImage()(face.tensor.squeeze(0))
+                                aligned_path = os.path.join(aligned_images_dir, face_filename)
+                                aligned_pil.save(aligned_path)
+                                print(f"  정렬된 얼굴 이미지 저장 성공: {aligned_path}")
+                                
+                                # 2. 감정 정보를 추가한 이미지 저장 (processed_images 폴더)
+                                face_img = transforms.ToPILImage()(face.tensor.squeeze(0))
+                                
+                                # 감정 분류 결과를 이미지에 오버랩
+                                draw = ImageDraw.Draw(face_img)
+                                
+                                # 이미지 크기
+                                img_width, img_height = face_img.size
+                                
+                                # 1. 주요 감정 및 신뢰도 (좌상단)
+                                main_text = f"{emotion} ({confidence:.2f})"
+                                
+                                # 텍스트 위치와 색상 설정
+                                main_text_position = (10, 10)  # 좌상단에서 약간 띄움
+                                main_text_color = (255, 0, 0)  # 빨간색
+                                
+                                # 폰트 설정 (기본 폰트 사용)
+                                try:
+                                    # Windows 기본 폰트 시도
+                                    main_font = ImageFont.truetype("arial.ttf", 24)
+                                    detail_font = ImageFont.truetype("arial.ttf", 14)  # 상세 점수용 작은 폰트
+                                except IOError:
+                                    # 기본 폰트 사용
+                                    main_font = ImageFont.load_default()
+                                    detail_font = ImageFont.load_default()
+                                
+                                # 텍스트 크기 측정
+                                main_text_width, main_text_height = draw.textsize(main_text, font=main_font) if hasattr(draw, 'textsize') else (len(main_text)*14, 24)
+                                
+                                # 배경 그리기
+                                draw.rectangle(
+                                    [main_text_position[0]-5, main_text_position[1]-5, 
+                                     main_text_position[0]+main_text_width+5, main_text_position[1]+main_text_height+5],
+                                    fill=(0, 0, 0, 180)
+                                )
+                                
+                                # 텍스트 그리기
+                                draw.text(main_text_position, main_text, fill=main_text_color, font=main_font)
+                                
+                                # 2. 모든 감정 점수 표시 (우측 하단)
+                                if all_scores:
+                                    # 모든 감정 점수 텍스트 생성
+                                    score_lines = []
+                                    for emotion_name, score in all_scores.items():
+                                        score_lines.append(f"{emotion_name}: {score:.4f}")
+                                    
+                                    # 텍스트 크기 측정 (대략적 계산)
+                                    line_height = 16
+                                    max_line_width = max([len(line) * 7 for line in score_lines])  # 대략적인 픽셀 계산
+                                    detail_text_height = len(score_lines) * line_height
+                                    
+                                    # 우측 하단 위치 계산
+                                    detail_text_position = (img_width - max_line_width - 10, img_height - detail_text_height - 10)
+                                    
+                                    # 배경 그리기
+                                    draw.rectangle(
+                                        [detail_text_position[0]-5, detail_text_position[1]-5, 
+                                         img_width-5, img_height-5],
+                                        fill=(0, 0, 0, 160)
+                                    )
+                                    
+                                    # 텍스트 그리기 (줄바꿈 처리)
+                                    y_position = detail_text_position[1]
+                                    for line in score_lines:
+                                        draw.text((detail_text_position[0], y_position), line, fill=(255, 255, 255), font=detail_font)
+                                        y_position += line_height
+                            
+                            # 변경된 이미지 저장
+                            face_img.save(face_img_path)
+                            print(f"  얼굴 이미지 저장 (감정 정보 포함): {face_img_path}")
+                        except Exception as e:
+                            print(f"  얼굴 이미지 저장 오류: {str(e)}")
+                            import traceback
+                            print(traceback.format_exc())
+                            
+                            # 오류 발생 시 원본 이미지에서 크롭 시도
+                            try:
+                                # 원본 이미지에서 직접 얼굴 영역 크롭
+                                img_width, img_height = img.size
+                                
+                                # 좌표가 이미지 경계를 넘지 않도록 조정
+                                x1 = max(0, min(bbox[0], img_width-1))
+                                y1 = max(0, min(bbox[1], img_height-1))
+                                x2 = max(0, min(bbox[2], img_width-1))
+                                y2 = max(0, min(bbox[3], img_height-1))
+                                
+                                face_crop = img.crop((x1, y1, x2, y2))
+                                face_crop.save(face_img_path)
+                                print(f"  대체 방법: 원본 이미지에서 얼굴 크롭 저장: {face_img_path}")
+                            except Exception as e2:
+                                print(f"  대체 이미지 생성 실패: {str(e2)}")
+                                shutil.copy(image_output_path, face_img_path)
+                                print(f"  최종 대체: 전체 이미지 사용: {face_img_path}")
+                        # else 구문 제거하고 if문으로 대체
+                        elif not (has_tensor and tensor_not_none and has_numel and numel_value > 0):
+                            # face.tensor가 없는 경우 원본 이미지에서 직접 크롭
+                            print(f"  경고: 얼굴 #{i+1}의 face.tensor가 유효하지 않습니다. 원본 이미지에서 크롭을 시도합니다.")
+                            try:
+                                # 원본 이미지에서 직접 얼굴 영역 크롭
+                                img_width, img_height = img.size
+                                
+                                # 좌표가 이미지 경계를 넘지 않도록 조정
+                                x1 = max(0, min(bbox[0], img_width-1))
+                                y1 = max(0, min(bbox[1], img_height-1))
+                                x2 = max(0, min(bbox[2], img_width-1))
+                                y2 = max(0, min(bbox[3], img_height-1))
+                                
+                                # 확인: 너무 작은 영역이거나 비정상 좌표인지
+                                min_size = 20  # 최소 크기
+                                if x2 > x1 and y2 > y1 and (x2 - x1) > min_size and (y2 - y1) > min_size:
+                                    # 정렬된 얼굴 이미지 (aligned_faces)
+                                    face_crop = img.crop((x1, y1, x2, y2))
+                                    aligned_path = os.path.join(aligned_images_dir, face_filename)
+                                    face_crop.save(aligned_path)
+                                    print(f"  정렬된 얼굴 이미지 저장 (원본 크롭): {aligned_path}")
+                                    
+                                    # 감정 정보가 포함된 이미지 (processed_images)
+                                    face_img = face_crop.copy()
+                                    draw = ImageDraw.Draw(face_img)
+                                    
+                                    # 이미지 크기
+                                    img_width, img_height = face_img.size
+                                    
+                                    # 1. 주요 감정 및 신뢰도 (좌상단)
+                                    main_text = f"{emotion} ({confidence:.2f})"
+                                    main_text_position = (10, 10)
+                                    main_text_color = (255, 0, 0)
+                                    
+                                    try:
+                                        main_font = ImageFont.truetype("arial.ttf", 24)
+                                        detail_font = ImageFont.truetype("arial.ttf", 14)
+                                    except IOError:
+                                        main_font = ImageFont.load_default()
+                                        detail_font = ImageFont.load_default()
+                                    
+                                    # 텍스트 크기 측정
+                                    main_text_width, main_text_height = draw.textsize(main_text, font=main_font) if hasattr(draw, 'textsize') else (len(main_text)*14, 24)
+                                    
+                                    # 배경 그리기
+                                    draw.rectangle(
+                                        [main_text_position[0]-5, main_text_position[1]-5, 
+                                         main_text_position[0]+main_text_width+5, main_text_position[1]+main_text_height+5],
+                                        fill=(0, 0, 0, 180)
+                                    )
+                                    
+                                    # 텍스트 그리기
+                                    draw.text(main_text_position, main_text, fill=main_text_color, font=main_font)
+                                    
+                                    # 2. 모든 감정 점수 표시 (우측 하단)
+                                    if all_scores:
+                                        # 모든 감정 점수 텍스트 생성
+                                        score_lines = []
+                                        for emotion_name, score in all_scores.items():
+                                            score_lines.append(f"{emotion_name}: {score:.4f}")
+                                        
+                                        # 텍스트 크기 측정 (대략적 계산)
+                                        line_height = 16
+                                        max_line_width = max([len(line) * 7 for line in score_lines])  # 대략적인 픽셀 계산
+                                        detail_text_height = len(score_lines) * line_height
+                                        
+                                        # 우측 하단 위치 계산
+                                        detail_text_position = (img_width - max_line_width - 10, img_height - detail_text_height - 10)
+                                        
+                                        # 배경 그리기
+                                        draw.rectangle(
+                                            [detail_text_position[0]-5, detail_text_position[1]-5, 
+                                             img_width-5, img_height-5],
+                                            fill=(0, 0, 0, 160)
+                                        )
+                                        
+                                        # 텍스트 그리기 (줄바꿈 처리)
+                                        y_position = detail_text_position[1]
+                                        for line in score_lines:
+                                            draw.text((detail_text_position[0], y_position), line, fill=(255, 255, 255), font=detail_font)
+                                            y_position += line_height
+                                    
+                                    face_img.save(face_img_path)
+                                    print(f"  얼굴 이미지 저장 (감정 정보 포함): {face_img_path}")
+                                else:
+                                    print(f"  유효하지 않은 얼굴 좌표: {bbox}, 크기: {x2-x1}x{y2-y1}, 원본 이미지 크기: {img_width}x{img_height}")
+                                    # 얼굴 이미지를 저장할 수 없는 경우, facetorch가 생성한 전체 결과 이미지 사용
+                                    shutil.copy(image_output_path, face_img_path)
+                                    print(f"  대체 이미지 사용: {face_img_path}")
+                            except Exception as e:
+                                print(f"  얼굴 이미지 저장 오류: {str(e)}")
+                                # 실패 시 facetorch가 생성한 전체 결과 이미지 경로 사용
+                                shutil.copy(image_output_path, face_img_path)
+                                print(f"  오류로 인한 대체 이미지 사용: {face_img_path}")
+                        
+                        # CSV에 결과 추가
+                        csv_writer.writerow([image_output_path, i+1, emotion, confidence, bbox[0], bbox[1], bbox[2], bbox[3]])
+                        
+                        # 얼굴 결과 데이터 생성
+                        face_data = {
+                            "face_id": i+1,
+                            "bbox": bbox,
+                            "emotion": emotion,
+                            "confidence": confidence,
+                            "scores": all_scores
+                        }
+                        image_result["faces"].append(face_data)
+                
+                # 유효한 얼굴이 하나 이상 있을 때만 전체 이미지 저장
+                if valid_face_count > 0:
+                    # 전체 이미지에 얼굴 표시하여 저장
+                    result.path_output = image_output_path
+                    if "draw_boxes" in analyzer.utilizers:
+                        result = analyzer.utilizers["draw_boxes"].run(result)
+                    if "draw_landmarks" in analyzer.utilizers:
+                        result = analyzer.utilizers["draw_landmarks"].run(result)
+                    if "save" in analyzer.utilizers:
+                        result = analyzer.utilizers["save"].run(result)
+                    print(f"  저장됨: {image_output_path}")
+                    # JSON 결과 경로 설정
+                    image_result["image_path"] = image_output_path
+                else:
+                    print(f"  유효한 얼굴이 없어 이미지를 저장하지 않습니다.")
+            else:
+                print(f"  얼굴이 감지되지 않았습니다. 이미지를 저장하지 않습니다.")
+            
+            # 이미지 결과를 JSON에 추가
+            json_results["results"].append(image_result)
+            
+        except Exception as e:
+            print(f"  오류 발생: {img_path} - {str(e)}")
+            import traceback
+            print(traceback.format_exc())
+            
+            # 오류 정보를 JSON에 추가
+            error_result = {
+                "image_name": Path(img_path).stem,
+                "error": str(e)
+            }
+            json_results["results"].append(error_result)
+    
+    # 총 감지된 얼굴 수 업데이트
+    json_results["total_faces"] = total_face_count
+    
+    # 감정 분석 결과 요약
+    emotions_summary = {}
+    for result in json_results["results"]:
+        if "faces" in result:
+            for face in result["faces"]:
+                emotion = face.get("emotion", "Unknown")
+                if emotion in emotions_summary:
+                    emotions_summary[emotion] += 1
+                else:
+                    emotions_summary[emotion] = 1
+    
+    json_results["emotions_summary"] = emotions_summary
+    
+    # 감정 분석 결과를 JSON 파일로 저장
+    with open(json_path, 'w', encoding='utf-8') as jsonfile:
+        json.dump(json_results, jsonfile, ensure_ascii=False, indent=2)
+    
+    # 이미지 목록을 담은 텍스트 파일 생성 (학습용)
+    train_list_path = os.path.join(output_dir, "train_list.txt")
+    with open(train_list_path, 'w', encoding='utf-8') as f:
+        for result in json_results["results"]:
+            if "faces" in result:
+                for face in result["faces"]:
+                    face_path = face.get("face_image_path")
+                    emotion = face.get("emotion")
+                    confidence = face.get("confidence", 0)
+                    if face_path and emotion and emotion != "Unknown" and confidence > 0.3:  # 신뢰도가 30% 이상인 경우만 포함
+                        f.write(f"{face_path} {emotion}\n")
+    
+    # 결과 요약 출력
+    print("\n처리 결과 요약:")
+    print(f"총 처리된 이미지: {len(image_files)}개")
+    print(f"총 감지된 얼굴: {total_face_count}개")
+    print(f"필터링된 작은 얼굴: {filtered_face_count}개")
+    print(f"감정별 얼굴 수:")
+    for emotion, count in emotions_summary.items():
+        print(f"  - {emotion}: {count}개")
+    print(f"\n결과가 다음 위치에 저장되었습니다:")
+    print(f"  - 처리된 이미지: {processed_images_dir}")
+    print(f"  - 정렬된 얼굴 이미지: {aligned_images_dir}")
+    print(f"  - CSV 결과: {csv_path}")
+    print(f"  - JSON 결과: {json_path}")
+    print(f"  - 학습용 목록: {train_list_path}")
+    
+    print("\n모든 이미지 처리 완료!")
+
+if __name__ == "__main__":
+    main()
