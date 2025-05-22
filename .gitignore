@@ -1,3 +1,6 @@
 facetorch/.git/
 paper/*.pdf
-./backup/*
+
+# backup이 포함된 파일들 제외
+*backup*
+.cursor/
